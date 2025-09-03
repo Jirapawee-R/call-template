@@ -1,1 +1,19 @@
+name: Main CI workflow
+
+on:
+  push:
+    branches:
+      - main
+  
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # job's name
+  run-build:
+    name: Call Reuseable workflow
+    uses: Jirapawee-R/node-template/.github/workflows/node-build-template.yml@main
+    with:
+      node-version: '20'
 
