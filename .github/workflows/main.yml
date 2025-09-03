@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  # job's name
+  # job's name is "run-build"
   run-build:
     name: Call Reuseable workflow
     uses: Jirapawee-R/node-template/.github/workflows/node-build-template.yml@main
